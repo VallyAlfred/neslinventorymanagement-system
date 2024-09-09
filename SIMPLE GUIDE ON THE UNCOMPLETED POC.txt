@@ -1,0 +1,67 @@
+BELOW IS A DATABASE TABLE THAT MANAGES THE LOGIN DETAIL OF THE SIX USERS.
+THE LOGIN PAGES SWITCHES FROM A USER TO ANOTHER BASED ON THE USER SELECTED FROM THE COMBO BOX LIST OF USERS.  
+
+mysql> SELECT * FROM ADMIN_USERS;
++----+----------+----------+
+| id | username | password |
++----+----------+----------+
+|  1 | admin    | admin    |
+|  2 | user1    | user1    |
+|  3 | user2    | user2    |
+|  4 | user3    | user3    |
+|  5 | user4    | user4    |
+|  6 | user5    | user5    |
++----+----------+----------+
+6 rows in set (0.39 sec)
+
+BELOW IS A LIST OF TABLES(CREATED IN MYSQL) PROPOSED FOR THE POC
+
+| Tables_in_nesl         |
++------------------------+
+|                        |
+|                        |
+| admin_users            |
+| bin                    |
+| container              |
+| dockyard               |
+| itembin                |
+| push_notifications     |
+| rack                   |
+| requestitem            |
+| shelf                  |
+| source_point           |
+| supplier               |
+| test                   |
+|                        |
+| user_profiles          |
+| user_profiles_modified |
+|                        |
+| warehouse              |
++------------------------+
+
+BELOW IS THE BIN TABLE UPON WHICH THE BINDATA.JAVA CLASS WAS PERSISTED.
+mysql> DESCRIBE BIN
+    -> ;
++--------------------------+-------------+------+-----+---------+-------+
+| Field                    | Type        | Null | Key | Default | Extra |
++--------------------------+-------------+------+-----+---------+-------+
+| SER_NO                   | int         | YES  |     | NULL    |       |
+| SHIP                     | varchar(25) | YES  |     | NULL    |       |
+| DTG                      | varchar(40) | YES  |     | NULL    |       |
+| ITEM_REQUESTED           | varchar(40) | YES  |     | NULL    |       |
+| QTY_REQUESTED            | varchar(10) | YES  |     | NULL    |       |
+| DEN                      | varchar(10) | YES  |     | NULL    |       |
+| SHIP_CURRENT_HOLDING     | varchar(10) | YES  |     | NULL    |       |
+| TANK_CAPACITY            | varchar(10) | YES  |     | NULL    |       |
+| DEPOT_HOLDING_AS_AS_DATE | varchar(10) | YES  |     | NULL    |       |
+| QTY_RECOMMENDED          | varchar(10) | YES  |     | NULL    |       |
+| EST_BAL_AFTER_APPROVAL   | varchar(10) | YES  |     | NULL    |       |
+| QTY_APPROVED             | varchar(10) | YES  |     | NULL    |       |
+| ISSUING_DEPOT            | varchar(25) | YES  |     | NULL    |       |
+| LOCATION_OF_SHIP         | varchar(25) | YES  |     | NULL    |       |
+| REMARKS                  | varchar(50) | YES  |     | NULL    |       |
++--------------------------+-------------+------+-----+---------+-------+
+
+TAKE NOTE:
+THERE WAS A MISINFORMATION AT A POINT WHERE THE BIN TABLE WAS MODIFIED TO SUIT ITEMREQUEST TABLE FOR THE SAKE OF 
+THE REQUEST FORM GUI.

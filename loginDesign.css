@@ -1,0 +1,51 @@
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right,#f8f8fc,#1f3290);
+    -fx-border-color: #000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+.left-form:hover{
+    -fx-background-color:linear-gradient(to bottom, #e7e8e0,#1f3290);
+}
+
+.right-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .4px 0px;
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color:#4a4a86;
+}
+
+.textfield{
+    -fx-background-color:linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius:4px;
+    -fx-border-color:#000;
+    -fx-border-radius:4px;
+    -fx-border-width:.4px;
+    -fx-font-size:13px;
+    -fx-font-family:"Tahoma";
+}
+.textfield:focused{
+    -fx-background-color:#fff;
+    -fx-border-color:linear-gradient(to bottom right,#1f3290,#3e400f);
+    -fx-border-width:.8px;
+}
+
+.login-btn{
+    -fx-background-color:linear-gradient(to bottom, #e7e8e0,#1f3290);
+    -fx-background-radius:4px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-family:"Arial";
+    -fx-cursor:hand;
+}
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #e7e8e0,#1f7569);
+}
